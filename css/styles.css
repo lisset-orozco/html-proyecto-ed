@@ -1,0 +1,191 @@
+:root {
+  --l: 24px;
+  --m: 16px;
+  --s: 4px;
+  --link: rgb(247, 145, 37);
+  --naranja: #F17E06;
+  --fucsia: #E9388C;
+  --texto: #444;
+}
+
+/* BASE (smaccs)*/
+a {
+  color: var(--link);
+}
+
+/* LAYOUT */
+.main-sidebar {
+  /* padding: 0 1em;*/
+  margin-top: 2em;
+}
+
+.main-content {
+  padding: 0 1em;
+  /*max-width: 1024px;
+  margin: auto;*/
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    display: flex;
+    padding-right: 2em;
+  }
+
+  .main-sidebar {
+    width: 25%;
+    padding-left: 2em;
+  }
+
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
+main p {
+  text-align: justify;
+}
+
+.logo {
+  width: 140px;
+  display: block;
+  margin: 1em auto;
+}
+
+.menu {
+  background: var(--naranja);
+  padding: .5em 0;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li {
+  margin: .2em;  /*var(--s); 0 .5em;*/
+}
+
+.menu a {
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #FFF;
+  line-height: 1.5;
+  display: block;
+  padding: 0 .7em;
+}
+
+@media screen and (min-width: 640px) {
+  .menu li {
+    margin: 0 1.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    background: none;
+    margin-left: auto;
+  }
+  
+  .menu a {
+    color: var(--naranja);
+    display: block;
+    line-height: 2.5;
+    padding: 0 1em;
+  }
+  
+  .menu li {
+    margin: 0 .5em;
+  }
+
+  .menu a:hover, 
+  .menu a.active {
+    background: var(--naranja);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .main-header {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+  }
+}
+
+h1 {
+  color: var(--fucsia);
+}
+
+body {
+  line-height: 1.5;
+  color: var(--texto);
+}
+
+.main-footer {
+  background: #333;
+  color: #ddd;
+  padding: 1em;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.main-footer a { /*?*/
+  color: #fff;
+}
+
+.siguenos {
+  border-top: 1px solid var(--fucsia);
+  padding-top: 1em;
+}
+
+.siguenos a {
+  display: block;
+  font-size: .9em;
+}
+
+.siguenos a:before {
+  display: inline-block;
+  margin-right: .3em;
+}
+
+@media screen and (min-width: 768px) {
+  .main-footer .siguenos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-footer .siguenos a {
+    margin: 0 2em;
+  }
+
+  .siguenos {
+    border-top: none;
+    padding-top: 0; 
+  }
+}
+
+/* Inicio  - Front Page */
+.inicio main {
+  width: 100%;
+}
+
+.inicio .main-sidebar {
+  display: none;
+}
+
+/* Contacto*/
+.contacto .main-banner {
+  margin-bottom: 2em;
+}
