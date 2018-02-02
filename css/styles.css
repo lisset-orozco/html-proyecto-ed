@@ -141,7 +141,7 @@ body {
   text-align: center;
 }
 
-.main-footer a { /*?*/
+.main-footer a {
   color: #fff;
 }
 
@@ -159,7 +159,7 @@ body {
   display: inline-block;
   margin-right: .3em;
 }
-
+/**/
 @media screen and (min-width: 768px) {
   .main-footer .siguenos {
     display: flex;
