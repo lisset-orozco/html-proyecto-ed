@@ -15,14 +15,14 @@ html
     header.main-header
       .logo-container
         a(href="/")
-          img(src="/img/dd-logo.svg", alt="logo" height="150").logo
+          img(src="img/dd-logo.svg", alt="logo" height="150").logo
 
       nav.menu
         include ../blocks/menu.pug
 
     div.main-banner
       block banner
-        img(src='/img/' + currentPage + '.jpg', alt="banner de "+ currentPage)
+        img(src='img/' + currentPage + '.jpg', alt="banner de "+ currentPage)
     
     .main-content
       main
